@@ -5,6 +5,7 @@
 int main (){
 	int a, b, r;
 	int res;
+	float div, ans;
 	srand(time(NULL));
 	
 	r = rand() % 5;
@@ -23,13 +24,14 @@ int main (){
 				res = a-b;
 				printf("%d - %d = %d\n", a, b, res);
 				break;
-			case 3: //multiplicación
+			case 3: //multiplicaciÃ³n
 				res = a*b;
 				printf("%d * %d = %d\n", a, b, res);
 				break;
-			case 4: //división
-				res = a/b;
-				printf("%d / %d = %d\n", a, b, res);
+			case 4: //divisiÃ³n 
+				div = a; 
+				ans = div/b;
+				printf("%d / %d = %0.3f\n", a, b, ans);
 				break;
 		}
 		r = rand() % 5;
